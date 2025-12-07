@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultancy.uz</title>
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom accent animation */
+    .price-card:hover { transform: translateY(-8px) scale(1.01); }
+    .price-flip { transition: transform .45s cubic-bezier(.2,.9,.3,1); transform-style: preserve-3d; }
+    .price-face { backface-visibility: hidden; }
+    .price-back { transform: rotateX(180deg); position: absolute; inset: 0; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl md:text-3xl font-extrabold">Consultancy.uz</h1>
+      <p class="text-sm text-gray-500">Moslashtirilgan tariflar — kichikdan korporativgacha</p>
+    </div>
+    <div class="hidden md:block">
+      <a href="https://t.me/faxriddindurdibaev" class="text-sm px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Bepul konsultatsiya</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pb-16">
+    <section id="tariflar" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card: START -->
+      <article class="price-card relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300" data-default="1 300 000 — 1 500 000 so'm" data-hover="1 300 000 so'm (oylik)\n+ o'rnatish 1 300 000 so'm">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-indigo-700 text-sm font-semibold">START</span>
+          <span class="text-xs text-gray-400">Kichik biznes</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Boshlang‘ich paket</h3>
+        <p class="mt-2 text-sm text-gray-500">1C o'rnatish, boshlang'ich hujjatlar, oyiga 1 marta yordam.</p>
+
+        <div class="mt-6 relative h-20">
+          <div class="price-flip w-full h-full">
+            <div class="price-face absolute inset-0 flex flex-col items-start justify-center">
+              <div class="text-2xl font-extrabold" id="price-start">1 300 000 — 1 500 000 so'm</div>
+              <div class="text-xs text-gray-400">/ oy</div>
+            </div>
+            <div class="price-back absolute inset-0 flex flex-col items-start justify-center opacity-0" id="price-start-back">
+              <div class="text-lg font-bold">1 300 000 so'm</div>
+              <div class="text-xs text-gray-500">+ o'rnatish 1 300 000 so'm</div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>• 1C o‘rnatish va sozlash</li>
+          <li>• Boshlang‘ich hujjatlar</li>
+          <li>• Oyiga 1 marta texnik yordam</li>
+        </ul>
+
+        <div class="mt-6 flex items-center gap-3">
+<a href="https://t.me/consultancyuz" target="_blank" 
+   class="px-5 py-3 bg-red-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 inline-block">
+   Buyurtma berish
+</a>
+
+        </div>
+      </article>
+
+      <!-- Card: STANDARD -->
+      <article class="price-card relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300" data-default="1 800 000 — 2 200 000 so'm" data-hover="1 800 000 so'm (oylik)\n+ 3 oy bepul texnik yordam">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-sm font-semibold">STANDARD</span>
+          <span class="text-xs text-gray-400">O‘rta biznes</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Standart paket</h3>
+        <p class="mt-2 text-sm text-gray-500">To‘liq sozlash, oyiga 50 tagacha hujjat, hisobotlar.</p>
+
+        <div class="mt-6 relative h-20">
+          <div class="price-flip w-full h-full">
+            <div class="price-face absolute inset-0 flex flex-col items-start justify-center">
+              <div class="text-2xl font-extrabold" id="price-standard">1 800 000 — 2 200 000 so'm</div>
+              <div class="text-xs text-gray-400">/ oy</div>
+            </div>
+            <div class="price-back absolute inset-0 flex flex-col items-start justify-center opacity-0" id="price-standard-back">
+              <div class="text-lg font-bold">1 800 000 so'm</div>
+              <div class="text-xs text-gray-500">+ 3 oy kengaytirilgan yordam</div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>• 1C to‘liq sozlash</li>
+          <li>• Oylik hujjatlar kiritish (50 tagacha)</li>
+          <li>• Soliq va statistika hisobotlari</li>
+        </ul>
+
+        <div class="mt-6 flex items-center gap-3">
+          <a href="https://t.me/consultancyuz" target="_blank" 
+   class="px-5 py-3 bg-amber-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 inline-block">
+   Buyurtma berish
+</a>
+
+        </div>
+      </article>
+
+      <!-- Card: PRO -->
+      <article class="price-card relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300" data-default="2 500 000 — 4 000 000 so'm" data-hover="2 500 000 so'm (oylik)\n+ joyiga chiqib xizmat">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm font-semibold">PRO</span>
+          <span class="text-xs text-gray-400">Yirik biznes</span>
+        </div>
+        <h3 class="mt-4 text-xl font-bold">Professional paket</h3>
+        <p class="mt-2 text-sm text-gray-500">Cheklanmagan hujjatlar, soliq hisobotlari, treninglar.</p>
+
+        <div class="mt-6 relative h-20">
+          <div class="price-flip w-full h-full">
+            <div class="price-face absolute inset-0 flex flex-col items-start justify-center">
+              <div class="text-2xl font-extrabold" id="price-pro">2 500 000 — 4 000 000 so'm</div>
+              <div class="text-xs text-gray-400">/ oy</div>
+            </div>
+            <div class="price-back absolute inset-0 flex flex-col items-start justify-center opacity-0" id="price-pro-back">
+              <div class="text-lg font-bold">2 500 000 so'm</div>
+              <div class="text-xs text-gray-500">+ joyiga chiqib xizmat va trening</div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>• 1C to‘liq yuritish</li>
+          <li>• Cheklanmagan hujjatlar</li>
+          <li>• Joyiga chiqib xizmat va trening</li>
+        </ul>
+
+        <div class="mt-6 flex items-center gap-3">
+         <a href="https://t.me/consultancyuz" target="_blank" 
+   class="px-5 py-3 bg-green-600 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 inline-block">
+   Buyurtma berish
+</a>
+
+        </div>
+      </article>
+
+    </section>
+
+    <section class="mt-12 bg-white p-6 rounded-2xl shadow">
+      <h4 class="text-lg font-bold">Qo‘shimcha xizmatlar</h4>
+      <div class="mt-4 grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-gray-600">
+        <div class="p-4 border rounded-lg">1C o‘rnatish: 1 300 000 – 1 800 000 so'm</div>
+        <div class="p-4 border rounded-lg">1C yangilash: 1 200 000 – 1 500 000 so'm</div>
+        <div class="p-4 border rounded-lg">Bazani tiklash: 1 400 000 – 2 000 000 so'm</div>
+        <div class="p-4 border rounded-lg">Trening: 1 500 000 so'm / kurs</div>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-8 bg-white p-6 rounded-2xl shadow">
+      <h4 class="text-lg font-bold">Aloqa</h4>
+      <p class="mt-3 text-sm text-gray-600">Savol yoki buyurtma uchun biz bilan bog‘laning:</p>
+      <div class="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <a href="https://t.me/consultancyuz" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 border rounded-lg hover:bg-gray-50">Telegram: @consultancyuz</a>
+        <a href="tel:+998934269910" class="inline-flex items-center gap-2 px-4 py-2 border rounded-lg hover:bg-gray-50">Tel: +998 93 426 99 10</a>
+      </div>
+    </section>
+
+    <section id="blog" class="mt-8 bg-white p-6 rounded-2xl shadow">
+      <h4 class="text-lg font-bold">1C Buxgalteriyada nimalar bo‘ladi?</h4>
+      <p class="mt-3 text-sm text-gray-600">Quyida 1C tizimida odatda yurgiziladigan asosiy bo‘limlar va ularning foydasi keltirilgan — bu sahifa orqali mijozlarimiz nima uchun 1C xizmatiga ehtiyoj sezishini tezda tushunadi.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <article class="p-4 border rounded-lg">
+          <h5 class="font-semibold">Moliyaviy hisob</h5>
+          <p class="text-sm text-gray-600 mt-2">Kassalar, bank operatsiyalari, umumiy hisob-kitob va balans — barcha moliyaviy harakatlarni yagona tizimda nazorat qilish.</p>
+        </article>
+
+        <article class="p-4 border rounded-lg">
+          <h5 class="font-semibold">Xodimlar va ish haqi</h5>
+          <p class="text-sm text-gray-600 mt-2">Ish haqi hisoblash, sug'urta, ta'til va boshqa personal hisob-kitoblar avtomatlashtiriladi.</p>
+        </article>
+
+        <article class="p-4 border rounded-lg">
+          <h5 class="font-semibold">Ombor va inventar</h5>
+          <p class="text-sm text-gray-600 mt-2">Mahsulotlarni qabul qilish, yetkazib berish va zahiralar monitoringi — ortiqcha xarajatlarni kamaytiradi.</p>
+        </article>
+
+        <article class="p-4 border rounded-lg">
+          <h5 class="font-semibold">Soliq va hisobotlar</h5>
+          <p class="text-sm text-gray-600 mt-2">Soliq deklaratsiyalari, statistik hisobotlar va davlat organlariga taqdim etiladigan hujjatlar tayyorlanadi.</p>
+        </article>
+
+        <article class="p-4 border rounded-lg">
+          <h5 class="font-semibold">Integratsiyalar</h5>
+          <p class="text-sm text-gray-600 mt-2">CRM, onlayn-do'kon va bank API’lari bilan bog‘lanib real vaqt rejimida ma'lumot almashish mumkin.</p>
+        </article>
+
+        <article class="p-4 border rounded-lg">
+          <h5 class="font-semibold">Zaxira va xavfsizlik</h5>
+          <p class="text-sm text-gray-600 mt-2">Ma'lumotlarni doimiy zaxiralash, tiklash va foydalanuvchi huquqlarini boshqarish orqali xavfsizlik ta'minlanadi.</p>
+        </article>
+      </div>
+
+      <h5 class="mt-6 text-md font-bold">1C xizmatining mijozga foydasi</h5>
+      <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-2">
+        <li>Vaqtni tejaydi — qo‘lda ishlash kamayadi.</li>
+        <li>Xatoliklar va noto‘g‘ri hisob-kitoblar kamayadi.</li>
+        <li>Soliq talablariga moslik va hisobotlarni oson tayyorlash.</li>
+        <li>Boshqaruv qarorlarini qabul qilish uchun aniq moliyaviy tahlillar.</li>
+        <li>Shaxsiylashtirilgan qo‘llab-quvvatlash va trening orqali xodimlarni tezroq moslashtirish.</li>
+      </ul>
+
+      <!-- Mobile manager notice -->
+      <div class="mt-6 p-4 bg-indigo-50 border-l-4 border-indigo-600 rounded-lg">
+        <h5 class="font-semibold">Rahbarlar uchun — mobil ko‘rish</h5>
+        <p class="text-sm text-gray-700 mt-2">Endi kompaniya rahbarlari va moliya boshliqlari sahifani mobil telefon orqali qulay ko‘rishlari va real vaqt hisobotlariga kirishlari mumkin. Dashborddan daromad, xarajat va muhim ogohlantirishlarni bir qarashda kuzatib boring.</p>
+      </div>
+
+      <!-- Buxgalter PRO highlight -->
+      <div class="mt-6 p-6 rounded-2xl border shadow-md bg-gradient-to-r from-white to-gray-50">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="text-xl font-bold">Buxgalter PRO — To‘liq hisobot va boshqaruv</h3>
+            <p class="mt-2 text-sm text-gray-600">Korporativ darajadagi to‘liq 1C xizmatimiz — hisoblashdan tortib bank boshqaruvigacha, xavf va risklardan himoya qilishgacha.</p>
+          </div>
+          <div class="text-right">
+            <div class="text-2xl font-extrabold">Maxsus</div>
+            <div class="text-sm text-gray-400">Masofaviy+joyida xizmat</div>
+          </div>
+        </div>
+
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+            <li><strong>To‘liq buxgalteriya yuritish:</strong> kunlik, oylik va yillik hisob-kitoblar.</li>
+            <li><strong>Hisoblash va bank boshqaruvi:</strong> to‘lovlar, kelishuvlar, bank integratsiyalari va reconciliatsiya.</li>
+            <li><strong>Xavfdan ogohlantirish va riskdan himoya:</strong> avtomatik ogohlantirishlar, maxfiylik va huquqiy qoidalar bilan moslik.</li>
+            <li><strong>Soliq va statistika hisobotlari:</strong> o‘z vaqtida tayyorlash va topshirish.</li>
+          </ul>
+
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+            <li><strong>Ish haqlarni bank ma'lumotlari asosida to‘g‘rilash:</strong> xodimlar bank hisoblari va yuborilgan ma'lumotlar asosida avto-tuzatish.</li>
+            <li><strong>Ma'lumotlar asosida ish haqini tarqatish:</strong> bir nechta bank va hisob bo‘limlariga avtomatik tarqatish.</li>
+            <li><strong>Zaxira va qochirish rejasi:</strong> ma'lumotlarni tiklash va favqulodda holatlarda ishni davom ettirish.</li>
+            <li><strong>Shaxsiy menejer va 24/7 qo‘llab-quvvatlash:</strong> muammolarga tezkor javob.</li>
+          </ul>
+        </div>
+
+        <div class="mt-4 text-sm text-gray-600">
+          <h6 class="font-semibold">Qisqacha shartnoma tushuntirishi</h6>
+          <p class="mt-2">Shartnoma — bu xizmat ko‘rsatish shartlari, narx va muddatni belgilovchi hujjat. Asosiy bandlar: xizmat ko‘rsatish doirasi, ma'lumotlarni himoya qilish, to‘lovlar va muddatlar, tomonlar mas'uliyati va xizmat bekor qilish shartlari. Imzolash orqali mijoz xizmat ko‘rsatishni tasdiqlaydi va biz o‘z majburiyatlarimizni bajarishga xizmat qilamiz.</p>
+        </div>
+
+        <div class="mt-6 flex items-center gap-3">
+          <a href="https://t.me/consultancyuz" target="_blank" class="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700">Buyurtma va maslahat</a>
+          <a href="tel:+998934269910" class="px-4 py-2 border rounded-lg">Telefon orqali bog'lanish</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-8 text-center text-gray-500 text-sm">© 2025 Consultancy.uz</footer>
+      <section id="protester" class="mt-8 bg-white p-6 rounded-2xl shadow">
+      <h4 class="text-lg font-bold">PRO Tester — Baza tekshirish xizmati</h4>
+      <p class="mt-3 text-sm text-gray-600">Mavjud 1C ma'lumotlar bazangiz to‘liq tekshiriladi: xatoliklar, dublikatlar, nomuvofiqliklar aniqlanadi va hisobot beriladi.</p>
+      <div class="mt-4 p-4 bg-gray-50 rounded-lg text-sm">
+         Baza strukturasini tahlil qilish<br>
+         Hisob-kitoblar to‘g‘riligini tekshirish<br>
+         Xavfsizlik va risklar bo‘yicha audit<br>
+        ⏱ Tekshiruv muddati: <strong>3 ish kuni</strong>
+      </div>
+      <a href="https://t.me/consultancyuz" target="_blank" class="mt-4 inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg">Buyurtma berish</a>
+    </section>
+
+    <section id="kontragent" class="mt-8 bg-white p-6 rounded-2xl shadow">
+      <h4 class="text-lg font-bold">Kontragent tekshirish xizmati</h4>
+      <p class="mt-3 text-sm text-gray-600">Siz hamkorlik qilayotgan kompaniya yoki yakka tartibdagi tadbirkorlarni moliyaviy va huquqiy jihatdan tekshirib beramiz.</p>
+      <div class="mt-4 p-4 bg-gray-50 rounded-lg text-sm">
+         Ro‘yxatdan o‘tganlik holatini tekshirish<br>
+         Soliq qarzlari va risklarni aniqlash<br>
+         Sud ishlari va blok holatlarini ko‘rish<br>
+        ⏱ Ma'lumot yetkazish muddati: <strong>3 ish kuni</strong>
+      </div>
+      <a href="https://t.me/consultancyuz" target="_blank" class="mt-4 inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg">Tekshirtirishga buyurtma</a>
+    </section>
+
+</main>
+
+  
+</body>
+</html>
